@@ -24,3 +24,8 @@ IntelliRAG/
 ├── requirements.txt
 
 └── README.md
+
+
+<img width="838" height="281" alt="image" src="https://github.com/user-attachments/assets/9a271704-c6d3-48bc-9885-ec34c62a07e1" />
+
+
