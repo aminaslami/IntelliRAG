@@ -8,11 +8,19 @@
 ------------------
 
 IntelliRAG/
+
 ├── 01_preprocessing.ipynb
+
 ├── 02_indexing_faiss_bm25.ipynb
+
 ├── 03_hybrid_retrieval.ipynb
+
 ├── 04_reranking.ipynb
+
 ├── 05_acc_compression.ipynb
+
 ├── 06_evaluation_ragas.ipynb
+
 ├── requirements.txt
+
 └── README.md
