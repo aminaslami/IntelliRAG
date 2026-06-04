@@ -1,0 +1,1 @@
+# Akilli-Geri-Alma-Artirilmis-Uretim-Buyuk-Dil-Modellerinde-Baglamsal-Hassasiyet-ve-Verimliligi
