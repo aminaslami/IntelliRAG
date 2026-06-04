@@ -8,6 +8,15 @@
 
 README.md içine tezin başlığını, bölüm numaralarını ve her not defterinin hangi bölüme karşılık geldiğini yazan 10 satırlık bir açıklama yeterli olur.
 
+
+Türkçe tez metni için:
+
+Deneylerin tam olarak yeniden üretilebilmesi için IntelliRAG'ın kaynak kodu, Google Colab not defterleri ve değerlendirme betikleri aşağıdaki GitHub deposunda kamuya açık biçimde paylaşılmıştır:
+
+🔗 https://github.com/kullanici_adi/IntelliRAG
+
+Depo; veri ön işleme, indeksleme, hibrit geri alma, yeniden sıralama ve RAGAS değerlendirme adımlarına karşılık gelen ayrı Colab not defterlerini içermektedir. Kullanılan tüm model ağırlıkları HuggingFace Hub üzerinden erişilebilir durumdadır.
+
 ------------------
 
 IntelliRAG/
