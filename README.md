@@ -20,7 +20,9 @@ Depo; veri ön işleme, indeksleme, hibrit geri alma, yeniden sıralama ve RAGAS
 
 
     torch==2.2.1+cu118 
-sürümünün kurulabilmesi için PyTorch CUDA deposunun belirtilmesi gerekir.
+Sürümünün kurulabilmesi için PyTorch CUDA deposunun kurulması gerekiyor.
+
+        pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu118
 
 
 ------------------
