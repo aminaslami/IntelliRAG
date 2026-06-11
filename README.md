@@ -103,10 +103,9 @@ Natural Questions (NQ) kıyaslama veri kümesi üzerinde gerçekleştirilen dene
 ## Mimari
 
 
-<img width="881" height="732" alt="image" src="https://github.com/user-attachments/assets/108e7a61-475e-44c1-95d2-f6e4cfe5b684" />
+<img width="681" height="532" alt="image" src="https://github.com/user-attachments/assets/108e7a61-475e-44c1-95d2-f6e4cfe5b684" />
 
-Şekil 1. RAG iş akışı ve mimarisi. Kullanıcı sorgusu
-
+(Şekil-1) RAG iş akışı ve mimarisi. Kullanıcı sorgusu
 
 ---
 
