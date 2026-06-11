@@ -66,7 +66,6 @@ IntelliRAG/
 > Fırat Üniversitesi, Fen Bilimleri Enstitüsü  
 > Yazılım Mühendiliği Ana Bilim Dalı  
 > **Yazar:** Mohammad Amin ASLAMI
-> 
 > **Danışman:** Doç. Dr. Ferhat UÇAR
 > **Yıl:** 2026
 
