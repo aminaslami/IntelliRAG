@@ -66,6 +66,7 @@ IntelliRAG/
 > Fırat Üniversitesi, Fen Bilimleri Enstitüsü  
 > Yazılım Mühendiliği Ana Bilim Dalı  
 > **Yazar:** Mohammad Amin ASLAMI
+> 
 > **Danışman:** Doç. Dr. Ferhat UÇAR
 > **Yıl:** 2026
 
@@ -103,34 +104,11 @@ Natural Questions (NQ) kıyaslama veri kümesi üzerinde gerçekleştirilen dene
 ## Mimari
 
 ```
-Kullanıcı Sorgusu
-       │
-       ▼
-┌─────────────────────────────┐
-│  1. Dinamik Semantik        │  ← Bölüm 4.1 / SAGE tabanlı
-│     Parçalama               │
-└────────────┬────────────────┘
-             │
-             ▼
-┌─────────────────────────────┐
-│  2. Hibrit Geri Alma        │  ← Bölüm 4.2 / FAISS + BM25
-│     (Yoğun + Seyrek)        │
-└────────────┬────────────────┘
-             │
-             ▼
-┌─────────────────────────────┐
-│  3. Çapraz Kodlayıcı        │  ← Bölüm 4.3 / ParetoRAG esinli
-│     Yeniden Sıralama        │
-└────────────┬────────────────┘
-             │
-             ▼
-┌─────────────────────────────┐
-│  4. Uyarlanabilir Bağlam    │  ← Bölüm 4.4 / ACC modülü
-│     Sıkıştırma (ACC)        │
-└────────────┬────────────────┘
-             │
-             ▼
-         LLM Yanıtı
+
+<img width="881" height="732" alt="image" src="https://github.com/user-attachments/assets/108e7a61-475e-44c1-95d2-f6e4cfe5b684" />
+
+Şekil 1. RAG iş akışı ve mimarisi. Kullanıcı sorgusu
+
 ```
 
 ---
