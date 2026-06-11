@@ -65,9 +65,9 @@ IntelliRAG/
 > **Yüksek Lisans Tezi**  
 > Fırat Üniversitesi, Fen Bilimleri Enstitüsü  
 > Yazılım Mühendiliği Ana Bilim Dalı  
-> **Yazar:** Mohammad Amin Aslami  
-> **Danışman:** —  
-> **Yıl:** 2025
+> **Yazar:** Mohammad Amin ASLAMI
+> **Danışman:** Doç. Dr. Ferhat UÇAR
+> **Yıl:** 2026
 
 ---
 
@@ -174,14 +174,18 @@ pip install -r requirements.txt
 ### Temel Bağımlılıklar
 
 ```
-torch>=2.0
-transformers>=4.35
-faiss-cpu>=1.7
-rank-bm25>=0.2
-sentence-transformers>=2.2
-ragas>=0.1
-datasets>=2.14
-numpy
+
+Python>=3.10.12
+transformers>=4.40.0
+sentence-transformers>=2.7.0
+faiss-cpu>=1.8.0
+rank-bm>=250.2.2
+bitsandbytes>=0.43.1
+torch>=2.2.1+cu118
+numpy>=1.26.4
+datasets (HuggingFace)>=2.19.0
+ragas>=0.1.7
+
 ```
 
 > **Not:** GPU ortamı için `faiss-cpu` yerine `faiss-gpu` kullanılması önerilir.
@@ -244,12 +248,12 @@ Ablasyon çalışmaları için bkz. Tablo 5.2–5.5 (tez, Bölüm 5).
 Bu çalışmayı araştırmanızda kullanıyorsanız lütfen aşağıdaki biçimde atıf yapınız:
 
 ```bibtex
-@mastersthesis{aslami2025intellirag,
-  author    = {Aslami, Mohammad Amin},
+@mastersthesis{aslami2026intellirag,
+  author    = {Aslami, Mohammad Amin. Uçar, },
   title     = {Intelligent Retrieval-Augmented Generation: Enhancing
                Contextual Sensitivity and Efficiency in Large Language Models},
   school    = {Fırat Üniversitesi, Fen Bilimleri Enstitüsü},
-  year      = {2025},
+  year      = {2026},
   type      = {Yüksek Lisans Tezi},
   url       = {https://github.com/aminaslami/IntelliRAG}
 }
@@ -259,7 +263,7 @@ Bu çalışmayı araştırmanızda kullanıyorsanız lütfen aşağıdaki biçim
 
 ## Lisans
 
-Bu depo akademik amaçlarla kamuya açık olarak paylaşılmaktadır.  
+Bu depo akademik, bilimsel ve eğitim amaçlarla kamuya açık olarak paylaşılmaktadır. 
 Ticari kullanım için lütfen yazarla iletişime geçiniz.
 
 ---
