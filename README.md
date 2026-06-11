@@ -170,7 +170,7 @@ Bu çalışmayı araştırmanızda kullanıyorsanız lütfen aşağıdaki biçim
 
 ```bibtex
 @mastersthesis{aslami2026intellirag,
-  author    = {Aslami, Mohammad Amin. Uçar, },
+  author    = {Aslami. Mohammad Amin, Uçar. Ferhat },
   title     = {Intelligent Retrieval-Augmented Generation: Enhancing
                Contextual Sensitivity and Efficiency in Large Language Models},
   school    = {Fırat Üniversitesi, Fen Bilimleri Enstitüsü},
