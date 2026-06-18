@@ -64,9 +64,9 @@ IntelliRAG/
     └── 02_IntelliRAG_Ablation.ipynb        # Ablasyon çalışmaları — Bölüm 5 (bulgular ve tartışma)
 ├── scripts
     └── evaluate.py
-└── README.md
+├── README.md
 ├── Seed_Tohum(42).py                       # Yeniden üretilebilirlik — Bölüm 4.6.1
-├── requirements.txt                        # Kullanılan kütüphane sürümleri — Bölüm 4.6
+└── requirements.txt                        # Kullanılan kütüphane sürümleri — Bölüm 4.6
 ```
 ---
 
