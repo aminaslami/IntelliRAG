@@ -11,7 +11,6 @@ from typing import List, Dict
 
 warnings.filterwarnings('ignore')
 
-
 # ── Bağımlılık kontrolü ───────────────────────────────────────────────────────
 def check_deps():
     missing = []
