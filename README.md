@@ -1,4 +1,4 @@
-# IntelliRAG
+# RAGSmart
 
 ## Akıllı Geri Alma Artırılmış Üretim: Büyük Dil Modellerinde Bağlamsal Hassasiyet ve Verimliliği Geliştirmek
 
@@ -31,7 +31,7 @@
 
 ## Genel Bakış
 
-**IntelliRAG**, büyük dil modeli (LLM) tabanlı uygulamalarda bilgi geri alma sürecini uçtan uca optimize etmek amacıyla tasarlanmış bütünleşik bir RAG (Retrieval-Augmented Generation) çerçevesidir. Çerçeve dört tamamlayıcı modülü bir araya getirmektedir:
+**RAGSmart**, büyük dil modeli (LLM) tabanlı uygulamalarda bilgi geri alma sürecini uçtan uca optimize etmek amacıyla tasarlanmış bütünleşik bir RAG (Retrieval-Augmented Generation) çerçevesidir. Çerçeve dört tamamlayıcı modülü bir araya getirmektedir:
 
 | Modül | Açıklama | İlgili Tez Bölümü |
 |---|---|---|
@@ -40,7 +40,7 @@
 | **Çapraz Kodlayıcı Yeniden Sıralama** | Geri alınan pasajların alaka düzeyine göre yeniden sıralanması | Bölüm 4.3 |
 | **Uyarlanabilir Bağlam Sıkıştırma (ACC)** | Token düzeyinde önem puanlamasıyla bağlam uzunluğu optimizasyonu | Bölüm 4.4 |
 
-Natural Questions (NQ) kıyaslama veri kümesi üzerinde gerçekleştirilen deneysel değerlendirmede IntelliRAG, tüm metriklerde istatistiksel olarak anlamlı iyileştirmeler elde etmiştir: sadakat %71 → %91, bağlam hassasiyeti %68 → %89, yanıt alaka düzeyi %73 → %92.
+Natural Questions (NQ) kıyaslama veri kümesi üzerinde gerçekleştirilen deneysel değerlendirmede RAGSmart, tüm metriklerde istatistiksel olarak anlamlı iyileştirmeler elde etmiştir: sadakat %71 → %91, bağlam hassasiyeti %68 → %89, yanıt alaka düzeyi %73 → %92.
 
 ---
 
@@ -58,10 +58,10 @@ Natural Questions (NQ) kıyaslama veri kümesi üzerinde gerçekleştirilen dene
 Aşağıdaki tablo, depodaki her dosyanın tezdeki hangi bölüm ve deneyle ilişkili olduğunu göstermektedir.
 
 ```
-IntelliRAG/
+RAGSmart/
 ├── notebooks
-│   ├── 01_IntelliRAG_Pipeline.ipynb        # Ana pipeline — Bölüm 4 (tam sistem)
-│   └── 02_IntelliRAG_Ablation.ipynb        # Ablasyon çalışmaları — Bölüm 5 (bulgular ve tartışma)
+│   ├── 01_RAGSmart_Pipeline.ipynb        # Ana pipeline — Bölüm 4 (tam sistem)
+│   └── 02_RAGSmart_Ablation.ipynb        # Ablasyon çalışmaları — Bölüm 5 (bulgular ve tartışma)
 ├── scripts
 │   └── evaluate.py                         # Komut satırı değerlendirme
 ├── README.md    
@@ -81,8 +81,8 @@ IntelliRAG/
 
 ```bash
 # 1. Depoyu klonlayın
-git clone https://github.com/aminaslami/IntelliRAG.git
-cd IntelliRAG
+git clone https://github.com/aminaslami/RAGSmart.git
+cd RAGSmart
 
 # 2. Bağımlılıkları yükleyin
 pip install -r requirements.txt
@@ -116,14 +116,14 @@ Sürümünün kurulabilmesi için PyTorch CUDA deposunun kurulması gerekiyor.
 
 ### Google Colab
 
-`01_IntelliRAG_Pipelinen.ipynb ve 02_IntelliRAG_Ablation` dosyasını doğrudan Google Colab üzerinde açarak çalıştırabilirsiniz. Not defterilerinde, her bölümde açıklayıcı başlıklar ve hücre açıklamaları içermektedir.
+`01_RAGSmart_Pipelinen.ipynb ve 02_RAGSmart_Ablation` dosyasını doğrudan Google Colab üzerinde açarak çalıştırabilirsiniz. Not defterilerinde, her bölümde açıklayıcı başlıklar ve hücre açıklamaları içermektedir.
 
 ### Yerel Ortam
 
 ```bash
-jupyter notebook 01_IntelliRAG_Pipelinen.ipynb
+jupyter notebook 01_RAGSmart_Pipelinen.ipynb
 
-jupyter notebook 02_IntelliRAG_Ablation
+jupyter notebook 02_RAGSmart_Ablation
 
 ```
 
@@ -151,7 +151,7 @@ Tam tohum yapılandırması için bkz. [`Seed_Tohum(42).py`](./Seed_Tohum(42).py
 
 ## Deneysel Sonuçlar
 
-Aşağıdaki tablo, IntelliRAG'ın NQ doğrulama kümesi (N = 7.830) üzerindeki temel konfigürasyonlarla karşılaştırmalı başarımını özetlemektedir.
+Aşağıdaki tablo, RAGSmart'ın NQ doğrulama kümesi (N = 7.830) üzerindeki temel konfigürasyonlarla karşılaştırmalı başarımını özetlemektedir.
 
 | Sistem | Sadakat | Bağlam Hassasiyeti | Yanıt Alaka Düzeyi | Gecikme (ms) |
 |---|---|---|---|---|
@@ -159,7 +159,7 @@ Aşağıdaki tablo, IntelliRAG'ın NQ doğrulama kümesi (N = 7.830) üzerindeki
 | + Dinamik Parçalama | 0,81 | 0,79 | 0,82 | 495 |
 | + Hibrit Geri Alma | 0,85 | 0,83 | 0,86 | 520 |
 | + Yeniden Sıralama | 0,88 | 0,86 | 0,89 | 560 |
-| **IntelliRAG (Tam)** | **0,91** | **0,89** | **0,92** | **610** |
+| **RAGSmart (Tam)** | **0,91** | **0,89** | **0,92** | **610** |
 
 Tüm karşılaştırmalar istatistiksel olarak anlamlıdır (p < 0,001; Cohen's d > 0,95).  
 Ablasyon çalışmaları için bkz. Tablo 5.2–5.5 (tez, Bölüm 5).
@@ -171,14 +171,14 @@ Ablasyon çalışmaları için bkz. Tablo 5.2–5.5 (tez, Bölüm 5).
 Bu çalışmayı araştırmanızda kullanıyorsanız lütfen aşağıdaki biçimde atıf yapınız:
 
 ```bibtex
-@mastersthesis{aslami2026intellirag,
+@mastersthesis{aslami2026RAGSmart,
   author    = {Aslami. Mohammad Amin, Uçar. Ferhat},
   title     = {Intelligent Retrieval-Augmented Generation: Enhancing
                Contextual Sensitivity and Efficiency in Large Language Models},
   school    = {Fırat Üniversitesi, Fen Bilimleri Enstitüsü},
   year      = {2026},
   type      = {Yüksek Lisans Tezi},
-  url       = {https://github.com/aminaslami/IntelliRAG}
+  url       = {https://github.com/aminaslami/RAGSmart}
 }
 ```
 
